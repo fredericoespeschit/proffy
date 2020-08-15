@@ -6,10 +6,12 @@
     
 </head>
 <body>
-     <img src="/assets/logo.svg" alt="Proffy" />
-     <h4>Next Level Week #2</h4>
-     <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/fredericoespeschit/proffy" /> 
-     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/fredericoespeschit/proffy" />
+    <h1 align="center">
+        <img src="/assets/logo.svg" alt="Proffy" />
+        Next Level Week #2
+    </h1>
+    <p align="center"> <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/fredericoespeschit/proffy" /> 
+     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/fredericoespeschit/proffy" /> </p>
 
 
      ##Technologies
