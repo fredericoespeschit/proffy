@@ -1,0 +1,57 @@
+<!DOCTYPE html>  <!-- Para o navegador entender que esta sendo utilizado o hmtl 5 -->
+<html lang="pt_br"> <!-- Tag HTML --> <!-- Atributo lang define a linguagem -->
+    <!-- 
+        HTML: Hypertext Makup Language
+              Hiperexto Marcação Linguagem <-
+
+        O que é um ipertexto? Nos tempos dos primordios, 
+        seria os links que levam a outras paginas tag <a>
+    -->
+<head> <!-- Cabeçalho -->
+    <meta charset="UTF-8"> <!-- Atributo charset -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | Sua plataforma de estudos online</title> <!-- Titulo de pagina -->
+    <link rel="stylesheet" href="style.css"> <!-- Busca um arquivo em um x local com a estilização da pagina -->
+
+    <style>
+        /* 
+            CSS: Cascading  StyleSheet
+                Em Cascata Folha de Estilo <-
+
+              * Cascata tem mais força *  
+               ordem de força seletores
+                  id | class | estilo
+
+
+            Atributos globais: Class | Id (o nome do Id é unico)       
+        */
+        h1{
+            color: red;
+        /*
+            chave - valor
+            propriedade - valor
+            atributo - valor
+        */
+        }
+
+        .paragrafo {
+            color: seagreen;
+          
+
+        }
+
+        #page-inicial{
+            background-color: sienna;
+        }
+    </style>
+</head>
+<body id="page-inicial"> <!-- Corpo--> 
+    <!-- No primeiro momento é importante se entender a estrutura do HTML -->
+    <!-- No segundo momento passamos para o CSS -->
+    <h1>Proffy</h1>
+    <p class="paragrafo">Sua plataforma de estudos online</p> 
+    <img src="#" alt="Logo">  
+    <button>Estudar</button>
+    <button class="paragrafo">Dar Aulas</button>
+</body>
+</html> <!-- Fechamento da Tag HMTL -->
