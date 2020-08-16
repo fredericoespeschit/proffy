@@ -5,13 +5,119 @@
 
 .page-header {
     background-color: var(--color-primary);
-    display: flex;
+    display: flex; /*Deixa o elemento um ao lado do outro*/
     flex-direction: column;
 }
 
+/* Inicio do CCS da seta para voltar para a pagina inicial e logo */
 .page-header .top-bar-container {
-    width: 90%;
+    width: 90%; /*Largura*/
+    margin: 0 auto; /*Deixando alinhado ao centro, com msm espaço nas laterais*/
     display: flex;
-    align-items: center;
-    
+    align-items: center; /*Alinha os componentes ao centro*/
+    justify-content: space-between; /*Da espaço entre os componentes*/
+    padding: 1.6rem 0;
+}
+
+.page-header .top-bar-container a {
+    height: 3.2rem;
+    transition: opacity 0.2s;
+} 
+
+.page-header .top-bar-container a:hover {
+    opacity: 0.6;
+    /*Hover é quando o mouse passa por cma
+        e faz um efeito de transação de cor 
+        opacidade vai de 0 a 1, 0 é transparente */
+}
+
+.page-header .top-bar-container img {
+    height: 1.6rem; /*altura*/
+}
+/* Fim  do CCS da seta para voltar para a pagina inicial e logo */
+
+/* Inicio do CCS do strong */
+
+.page-header .header-content {
+    width: 90%;
+    margin: 3.2rem auto;
+}
+
+.page-header .header-content strong {
+    font: 700 3.6rem Archivo;
+    line-height: 4.2rem; /*espaçamento entre as linhas*/
+    color: var(--color-title-in-primary);
+}
+
+/* Inicio do CCS do form */
+
+/*search-teachers é um ID, 
+cuidado como chamar ele no css*/
+#search-teachers {
+    margin-top: 3.2rem;
+}
+
+#search-teachers .select-block {
+    margin-bottom: 1.4rem;
+}
+
+#search-teachers button{
+    width: 100%; /* Largura */
+    height: 5.6rem; /* Altura */
+    background: var(--color-secondary); /* Backroud do botão */
+    color: var(--color-button-text); /* Cor do texto*/
+    border: 0; /* por padrão o botão bem com borda, então 0 tira */
+    border-radius: 0.8rem; /**/
+    cursor: pointer; /* mãozinha quando passa mouse em cima */
+    font: 700 1.6rem Archivo; /**/
+    display: flex; /**/
+    align-items: center; /**/
+    justify-content: center; /**/
+    text-decoration: none; /* tira o anderline em baixo do texto */
+    transition: background 0.2s; /**/
+    margin-top: 3.2rem; /**/
+}
+
+#search-teachers button:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+/* Lables */
+
+#search-teachers label {
+    color: var(--color-title-in-primary)
+}
+
+.select-block label,
+.input-block label {
+    font-size: 1.4rem;
+    color: var(--color-text-complement);
+}
+
+/* Input (horario) */
+
+.input-block input,
+.select-block select {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background-color: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    outline: 0; /* tira a linha de seleção */
+    padding: 0 1.6rem;
+    font: 1.6rem Archivo;
+}
+.input-block{
+    position: relative;
+}
+.input-block:focus-within::after {
+    content: "";
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: var(--color-primary-light);
+    position: absolute; /**/
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 1px;
 }
