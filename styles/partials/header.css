@@ -34,7 +34,7 @@
         opacidade vai de 0 a 1, 0 é transparente */
 }
 
-.page-header .top-bar-container img {
+.page-header .top-bar-container > img {
 	height: 1.6rem;
 	/*altura*/
 }
@@ -56,6 +56,14 @@
 	line-height: 4.2rem;
 	/*espaçamento entre as linhas*/
 	color: var(--color-title-in-primary);
+}
+
+.page-header .header-content p {
+	max-width: 30rem;
+	font-size: 1.6rem;
+	line-height-step: 2.6rem;
+	color: var(--color-text-in-primary);
+	margin-top: 2.4rem;
 }
 
 @media (min-width: 700px) {
