@@ -31,5 +31,5 @@ This project was developed at the [Next Level Week](https://rocketseat.com.br/) 
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [VS Code][vc]
+- [VS Code]
 
